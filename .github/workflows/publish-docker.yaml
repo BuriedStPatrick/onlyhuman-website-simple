@@ -1,8 +1,10 @@
 name: Publish Docker image
 
 on:
-  release:
-    types: [published]
+  push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
 
 jobs:
   push_to_registry:
@@ -30,5 +32,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: ${{ github.ref }}
