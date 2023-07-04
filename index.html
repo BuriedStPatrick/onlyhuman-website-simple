@@ -1,0 +1,113 @@
+<html>
+<head>
+  <link href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet" />
+  <link href="/node_modules/@fortawesome/fontawesome-free/css/brands.min.css" rel="stylesheet" />
+  <link href="/node_modules/@fortawesome/fontawesome-free/css/solid.min.css" rel="stylesheet" />
+
+  <!-- Font imports -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: url('/assets/bg-blur-01.png');
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+      color: white;
+    }
+
+    h1 {
+      text-transform: uppercase;
+    }
+
+    .logo {
+      width: 300px;
+    }
+
+    nav {
+      margin: 2em 40px;
+    }
+
+    .some-links {
+      text-align: center;
+      margin: 2em;
+    }
+
+    .some-links > a {
+      padding: 1em;
+      border: 2px solid white;
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      text-transform: uppercase;
+      transition: ease-in-out 0.1s;
+      border-radius: 5px;
+    }
+
+    .some-links > a:hover {
+      background: white;
+      color: black;
+      padding: 1em 4em;
+    }
+
+    section.splash-content {
+      margin: 0 40px;
+      text-align: center;
+    }
+
+    section.splash-content > h1 {
+      font-size: 62px;
+    }
+
+    header {
+      padding: 4em;
+      display: flex;
+      justify-content: center;
+    }
+
+    .video-container {
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+      padding: 1em;
+      display: flex;
+      flex: 50% auto;
+    }
+
+    iframe.latest-video {
+      width: 960;
+      height: 540;
+      margin: 0 auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-wrapper">
+      <img src="/assets/logo.svg" class="logo" />
+    </div>
+  </header>
+  <nav class="top-nav">
+    <div class="some-links">
+      <a href="https://facebook.onlyhuman.band"><i class="fa-brands fa-facebook"></i> Facebook</a>
+      <a href="https://youtube.onlyhuman.band"><i class="fa-brands fa-youtube"></i> YouTube</a>
+      <a href="https://instagram.onlyhuman.band"><i class="fa-brands fa-instagram"></i> Instagram</a>
+      <a href="https://bandcamp.onlyhuman.band"><i class="fa-brands fa-bandcamp"></i> Bandcamp</a>
+    </div>
+    <hr />
+  </nav>
+  <section class="splash-content">
+    <h1>Check out our latest video</h1>
+    <iframe
+        class="latest-video"
+        src="https://www.youtube.com/embed/k-lgiVK7Lnk"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+  </section>
+</body>
+</html>
+
