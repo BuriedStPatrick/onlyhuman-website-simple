@@ -5,6 +5,7 @@ RUN npm ci
 
 FROM source as build
 COPY . .
+RUN npm run build
 
 FROM nginx:latest as app
 COPY --from=build /src/index.html /usr/share/nginx/html/
