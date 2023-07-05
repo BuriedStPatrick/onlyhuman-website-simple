@@ -1,0 +1,73 @@
+body {
+  background: url("/assets/bg-blur-01.png");
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  color: white;
+  font-size: 16px;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 300px;
+}
+
+nav {
+  margin: 2em 40px;
+}
+
+.some-links {
+  text-align: center;
+  margin: 2em;
+  font-size: 24px;
+
+  a {
+    padding: 1em;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: ease-in-out 0.1s;
+    border-radius: 5px;
+    margin-left: 1em;
+
+    &:hover {
+      background: white;
+      color: black;
+      padding: 1em 4em;
+    }
+  }
+}
+
+section.splash-content {
+  margin: 0 40px;
+  text-align: center;
+
+  h1 {
+    font-size: 62px;
+  }
+}
+
+header {
+  padding: 4em;
+  display: flex;
+  justify-content: center;
+}
+
+.video-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+  flex: 50% auto;
+}
+
+iframe.latest-video {
+  width: 960;
+  height: 540;
+  margin: 0 auto;
+  display: block;
+}
