@@ -1,3 +1,5 @@
+$content-width: 1200px;
+
 body {
   background: url("/bg-blur-01.png");
   font-family: "Raleway", sans-serif;
@@ -15,16 +17,39 @@ h1 {
 }
 
 nav {
-  margin: 2em 40px;
+  margin: 2em auto;
+  max-width: 1200px;
+
+  @media only screen and (max-width: $content-width) {
+  }
+
+  hr {
+    width: 75px;
+    height: 2px;
+    background: white;
+  }
 }
 
 .some-links {
-  margin: 2em;
+  margin: 4em 2em;
   font-size: 24px;
   list-style: none;
   display: flex;
-  flex: auto;
-  width: 100%;
+  text-align: center;
+
+  @media only screen and (max-width: $content-width) {
+    display: grid;
+    grid-template-columns: 400px 400px;
+  }
+
+  li {
+    flex: auto;
+
+    @media only screen and (max-width: $content-width) {
+      padding: 2em;
+      flex: none;
+    }
+  }
 
   a {
     padding: 1em;
@@ -38,7 +63,10 @@ nav {
     &:hover {
       background: white;
       color: black;
-      padding: 1em 4em;
+
+      @media only screen and (min-width: $content-width) {
+        padding: 1em 4em;
+      }
     }
   }
 }
@@ -49,6 +77,10 @@ section.splash-content {
 
   h1 {
     font-size: 62px;
+  }
+
+  @media only screen and (max-width: $content-width) {
+    display: none;
   }
 }
 
