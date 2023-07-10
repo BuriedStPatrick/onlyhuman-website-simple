@@ -1,13 +1,18 @@
 {
-  "name": "onlyhuman-website-simple",
-  "version": "1.0.0",
-  "description": "onlyhuman-simple-website",
-  "main": "index.js",
+  "name": "onlyhuman-website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "author": "patrick@pat.gg",
-  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.63.6",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.0"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.0"
   }
