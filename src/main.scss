@@ -19,20 +19,21 @@ nav {
 }
 
 .some-links {
-  text-align: center;
   margin: 2em;
   font-size: 24px;
+  list-style: none;
+  display: flex;
+  flex: auto;
+  width: 100%;
 
   a {
     padding: 1em;
     border: 2px solid white;
     color: white;
     text-decoration: none;
-    display: inline-block;
     text-transform: uppercase;
     transition: ease-in-out 0.1s;
     border-radius: 5px;
-    margin-left: 1em;
 
     &:hover {
       background: white;
