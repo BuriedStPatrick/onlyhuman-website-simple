@@ -8,6 +8,4 @@ COPY . .
 RUN npm run build
 
 FROM nginx:latest as app
-COPY --from=build /src/index.html /usr/share/nginx/html/
-COPY --from=build /src/assets /usr/share/nginx/html/assets
-COPY --from=source /src/node_modules /usr/share/nginx/html/node_modules
+COPY --from=build /src/dist /usr/share/nginx/html/
